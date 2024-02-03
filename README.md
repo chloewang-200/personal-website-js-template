@@ -31,3 +31,7 @@ The tech stack used are plain and simple:
 - css
 - javascript
 
+# Thanks #
+If you like this template, don't forget to give it a ⭐ Thank you! 😊
+
+
