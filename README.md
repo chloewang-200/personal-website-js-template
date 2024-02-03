@@ -3,29 +3,29 @@
 
 # Live - https://chloewang-200.github.io/ #
 
-# Features #
+## Features ##
 This is my design for my own personal website, feel free to use this template to develop your own website :)
 
-# Basic Stack (js, html, css) #
+## Basic Stack (js, html, css) ##
 - Minimal Design
 - Easy To Browse
 - Blog Cards
 - Resume Portion
 
-# Sections #
+## Sections ##
 - Header
 - Blogs
 - Gallery
 - Resume
 
-# How to Use #
+## How to Use ##
 - clone it
 - if you are using VSCode, use the live server extension to host the website
 
-# How To Deploy #
+## How To Deploy ##
 There are many ways to deploy this project, I would recommend just hosting it on Github
 
-# Tech Stack Used #
+## Tech Stack Used ##
 The tech stack used are plain and simple:
 - html
 - css
