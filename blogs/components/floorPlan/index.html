@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe Wang</title>
+    <link href="../../../css/styles.css" type="text/css" rel="stylesheet">
+    <link href="../../../css/blog.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Inter:wght@400;600&family=Josefin+Sans:wght@600&family=Josefin+Slab&family=Jost:wght@600&family=Londrina+Sketch&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../../images/favicon.png?">
+</head>
+<body>
+    <div class = "roundBox">
+        <script src="../../../header.js"></script>
+    <!-- contents -->
+        <div class = "content">
+            
+            <div class = "blogTitle">A Reduction to the Floor Plan Generation Problem</div>
+            <hr>
+            <div class = "blogContent">
+                
+                <div class = "sectionTitle">The Spark ✨</div>
+                
+                <p>This project is an exploration to find a solution to faster/easier/ai housing design by reducing the problem to a box
+                    stacking problem. In commercial housing plan, there seem to be a lot of pattern and logic that 
+                    seems to be able to apply to a general set of housing design. I want to see if I can create a system that can generate
+                    valid floor plans based on a set of constraints. </p>
+                <hr>
+                <div class = "sectionTitle">The Foundation 🔨</div>
+                <p>The basic algorithm for this generator is to have an input of number of rooms
+                    and their room types, a site boundary, and then generate a floor plan that satisfies the constraints.
+                    The floor plan will then be filled with furnitures according to the room type and room sizes. 
+                </p>
+                <img class = "blogMidImage" src="imgs/algo.png" />
+                <p>For different room types, they would produce different room sizes according to the most common/standard
+                    commercial room sizes. For example, a bedroom would be 10'x12', a bathroom would be 5'x8', and a kitchen would be around 10'x10'.
+                </p>
+                <img class = "blogMidImage" src="imgs/algo1.png" />
+                <p>These blocks will then be placed into the boundary block using the first-fit bin-packing algorithm. I know this
+                    is not the perfect solution, but they are fast and simple to implement, and is a nice reduction to the complexity
+                    of the floor plan generation problem🤓️.
+                </p>
+                <img class = "blogMidImage" src="imgs/blocks.gif" />
+                      </p>
+                <hr>
+                <div class = "sectionTitle">Turning Into Floor Plans 🏠</div>
+                <div class = "subTitle">#1 Walls</div>
+                <p>The first step is adding thickness to the blocks to represent walls in a floor plan.
+                    The challenge in this step here is to detect adjacent/overlapping rooms, and union these walls
+                    to avoid any overlapping lines in the final floor plan.
+                </p>
+                <img class = "blogMidImage" src = "imgs/walls.gif" />
+                <div class = "subTitle">#2 Doors</div>
+                <p>The next step is to add doors to the floor plan. I used an algorithm to
+                    detect room adjacency relationship, and then trim openings to place doors according to this room adjacency relationship.
+                    As different housing types have different door placements standards, the generator can take in different distances
+                    from the door to the wall.
+                </p>
+                <img class = "blogMidImage" src = "imgs/doors.gif" />
+                <div class = "subTitle">#3 Furnitures</div>
+                <p>The next step would be placing & positioning furniture according to input room sizes. The furniture will be 
+                    placed in an orientation that avoids door placements. When the room size allows, more furniture would be placed into the plan
+                as fit. For example in this bedroom furniture placing algorithm, when there's space left, the bed size changes
+            and bedside tables will be added when there's vacant spaces.</p>
+                <img class = "blogImg" src="imgs/furniture.gif" />
+                <hr>
+                <div class = "sectionTitle">Combing Them Together ⛓️</div>
+                <p>Combining all the pieces together, we now have the ✨floor plan generator✨!
+                    Given an input number of rooms and a boundary, it will randomly generate a plan of different sizes of rooms.
+                    The floor plan will then be filled with furnitures according to the room type and room sizes.
+                </p>
+                <img class = "blogMidImage" src="imgs/final.gif" />
+                <p>With the same site boundary and different types of rooms, the generator will create a set of different plans!</p>
+                <img class = "blogMidImage" src="imgs/final.png" />
+                <p class = "final"></p>
+            
+        </div>
+</body>
+</html>

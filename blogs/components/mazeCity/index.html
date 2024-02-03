@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe Wang</title>
+    <link href="../../../css/styles.css" type="text/css" rel="stylesheet">
+    <link href="../../../css/blog.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Inter:wght@400;600&family=Josefin+Sans:wght@600&family=Josefin+Slab&family=Jost:wght@600&family=Londrina+Sketch&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../../images/favicon.png?">
+</head>
+<body>
+    <div class = "roundBox">
+        <script src="../../../header.js"></script>
+    <!-- contents -->
+        <div class = "content">
+            
+            <div class = "blogTitle">Utopian Maze Generator with Pathfinding</div>
+            <hr>
+            <div class = "blogContent">
+                <div class = "sectionTitle">The Spark ✨</div>
+                
+                <p>Ever since I laid my eyes on <a href="http://www.seancjackson.com/more-mazes-1" target="_blank">Sean C. Jackson's</a> intricate maze drawings, I've been utterly captivated😍. His meticulous designs and the winding paths drew me into a world of endless exploration, and I want to bring them to life in a more dimensional space.</p>
+                <img class = "blogImgCover" src="imgs/SeanCJackson.jpg" />
+                <p>I have created mazes before in introductory CS classes using Binary Tree, Dijkstra, Prism and etc... However these are all 2D flat mazes
+                that are not as interesting as the ones I saw on Sean's website! I want to create a maze that is more complex and more interesting to look at.
+                Here are some different types of mazes I created for my 'Tap Jump' game for 15-112 final project. I remember delving into the book <a href="http://www.mazesforprogrammers.com/" target="_blank">"Mazes for Programmers"</a> that summer, 
+                a gem for anyone enthralled by the logic behind maze creation. </p>
+                <img class = "blogImg" src="imgs/jumpTap.png" />
+                     To create mazes in the style of Sean C Jackson's, I decided to read the book again for inspiration. And I realized that although the book tantalizingly delved into the concept of 3D mazes, their representation remained flat and 2D. This realization birthed my mission: to breathe 3D life into these algorithms. </p>
+                <hr>
+                 <div class = "sectionTitle">The Foundation 🔨</div>
+                <p>Starting from a mere single node, I created a set of green and red rules to mold and expand my structure. The starting node will be either a red
+                    node or a green node, and follow the rules to expand out. To add in the "level changes" that
+                    mimics Sean C Jackson's designs, I decided to implement a level change whenver there is a grey-red edge.
+                    With every descending level, I reduced the height by a single unit, paving the way for a multi-layered 2.5D architectural wonder.</p>
+                <img class = "blogImg" src="imgs/Rules.png" />
+                <p>Applying these rules, the nodes will expand to different configurations. And the next step is to turn them in to 3D.
+                </p>
+                <img id = "ruleImg" src="imgs/ruleResult.png" />
+                <hr>
+                <div class = "sectionTitle">Connecting Stairs 🫣</div>
+                <p> To do
+                    this, I decided represent each node as a block, and the edges represent the direction to put the next block. And a grey-red edge
+                    represents a level change. Hence, the maze will start building from the highest block, and gradually go down from the center.
+                    Merging levels seamlessly was no small feat. A maze spread across dimensions required transitions - stairs. To adeptly place these stairs, connecting the maze's multiple layers,
+                     I turned to the Randomized Prim's Algorithm. This would add stairs to ensure there's at least
+                     one path from source to destination, and also add in random stairs on other routes. Beyond mere placement, this algorithm was instrumental in guaranteeing a clear, uninterrupted route from inception to conclusion.</p>
+                <img id = "stepImg" src = "imgs/stairs.png" />
+                <p>It's already starting to have the vibe of Sean C Jackson's mazes!</p>
+                <hr>
+                <div class = "sectionTitle">The Result! 💗</div>
+                <p>The algo can generate mazes on different scales. I rendered the images in 
+                    this white monotone color for now because they really bring out the 
+                    rhythm of the maze. I will add in colors and handdrawing-textures
+                in the future when I have more time to work on this project (hopefully)🤐️</p>
+                </p>
+                <div class="image-row">
+                    <div class="image-container">
+                        <img src="imgs/1.png" alt="Description of Image 1">
+                        <p>Iteration = 10</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="imgs/2.png" alt="Description of Image 2">
+                        <p>Iteration = 20</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="imgs/3.png" alt="Description of Image 3">
+                        <p>Iteration = 40</p>
+                    </div>
+                    
+                </div>
+                <img id = "blogImgCover" src = "imgs/obstacle.gif" />
+                <p>generating different obstacles and starting and ending points on the same topography</p>
+                <img id = "mazeCity" src = "imgs/mazeCity.png" />
+            </div>
+            
+        </div>
+</body>
+</html>

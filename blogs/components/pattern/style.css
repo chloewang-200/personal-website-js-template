@@ -1,0 +1,16 @@
+.content{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+#rules {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+#last {
+    padding-bottom: 70px;
+}

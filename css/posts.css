@@ -1,0 +1,103 @@
+/* .content a {
+    text-decoration: none;
+} */
+body {     /* Enables flexbox layout */
+    justify-content: center;     /* Centers children horizontally */
+    align-items: center;         /* Centers children vertically */             /* Remove default body margin */
+}
+
+#blogPostsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    flex-basis: calc(33.33% - 20px); /* 20px accounts for gaps between cards */
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+.card-date {
+    color: gray;
+    margin: 0px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.card-intro {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-link {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(72, 72, 92);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* 1-column layout for smaller screens - for example, below 600px */
+@media (max-width: 600px) {
+    .card {
+        flex-basis: 100%;
+    }
+}

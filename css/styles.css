@@ -1,0 +1,774 @@
+/* background color */
+body { background-color:#F2F0EE; 
+    padding-bottom: 5%;
+}
+
+/* background rounded corner box */
+.roundBox {
+    width: 94%;
+    left: 3%;
+    top: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    position: relative;
+    background: white;
+    border-radius: 94px
+}
+
+/* remove style for all links */
+a {
+    text-decoration: None;
+    color: black;
+}
+
+/* add hover color for introduction texts */
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+#hoverOrange:hover{
+    color:orange;
+}
+
+#hoverRed:hover {
+    color: red;
+}
+
+#hoverBlue:hover {
+    color: blue;
+}
+
+#hoverGreen:hover {
+    color: green;
+}
+
+#hoverPink:hover {
+    color: rgb(191, 0, 255);
+}
+
+/* the headers and navigation */
+.first {
+    top: 69px;
+    display: flex;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.pageTitle {
+    font-family: Josefin Sans;
+    position: relative;
+    margin-left: 10%;
+    color: black; font-size: 36px; font-family: Josefin Sans; font-weight: 600; word-wrap: break-word
+}
+
+.headerContainer {
+    position: relative;
+    margin-left: 50%;
+    margin-right: 0%;
+    width: 20%;
+}
+
+.headers {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+
+.headers > a {
+    margin-right: 30%;
+}
+
+.headers > a:last-child {
+    margin-right: 0;
+}
+
+/* the conttainer for the intro image and texts */
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.meImg {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.openingText {
+    margin-top: 15px;
+    margin-right: 5%;
+
+}
+
+/* intro texts */
+.hello {
+    justify-content: flex-end;
+    font-size: 30px;
+    top: 5px;
+    transform: rotate(-6.46deg); 
+    transform-origin: 0 0;
+    font-family: 'Josefin Slab', serif;
+}
+
+.intro {
+    left: 10%; 
+    max-width: 550px;
+    min-width: 200px;
+    line-height: 80px;
+    font-size: 45px;
+    margin-top: 8px;
+    transform-origin: 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    position: relative;
+    word-wrap: break-word;
+    margin-right: 80px;
+}
+
+.outlined {
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 54px;
+}
+/* grey boxes for the skills */
+.greyBoxes1{
+    right: 7%;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.greyBoxes2{
+    margin-top: 15px;
+    right: 13%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.greyBox {
+    width: 128px;
+    height: 43px;    
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:solid 2px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.greyBox:hover {
+    background-color: #ffddec;
+}
+
+/* timeline style */
+.content {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 0%;
+    color: black; font-size: 48px; 
+    font-family: Inter; font-weight: 700; line-height: 80px; 
+    word-wrap: break-word;
+}
+
+.sectionHeader {
+    height: 83px;  
+    color: black;
+    font-size: 48px; 
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 80px; 
+}
+
+.sectionIntro {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-right: 5%;
+}
+
+.content a {
+    text-decoration: underline;
+}
+
+.timeline {
+    border-left: 2px solid #333;
+    margin-top: 60px;
+}
+
+.timelineSection {
+    width: 85%;
+    margin-left: 7%;
+    margin-bottom: 50px;
+}
+
+.timelineHeader {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.currentTimelineHeader {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.timelineHeader::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -6px;
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+.timelineContent {
+    margin-top: 10px;
+}
+
+.currentTimelineHeader::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    left: -9px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #000000;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.timelineContent {
+    margin-top: 0px;
+}
+
+.star {
+    line-height: 24px; 
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* abbreviation for the titles */
+.SWE {
+    display: none;
+}
+
+
+#TA {
+    display: none;
+}
+
+.companyName {
+    display: none;
+}
+
+#comp {
+    display: none;
+}
+
+#compSmall {
+    display: none;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+li::before {
+    content: "✨";  
+    margin-right: 8px; 
+    font-size: 36px;   
+}
+
+/* the image grid for works */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 1%;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.image-grid img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 0;
+
+}
+
+/* overlay text on image */
+.image-with-text {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    color: black;
+    font-family: "londrina sketch", sans-serif;
+    font-size: 50px;
+    padding-left: 1%;
+    line-height: 1;
+}
+
+.white {
+    color: white;
+}
+
+.selected-text {
+    text-decoration: underline;
+}
+
+/* menu bar for smaller screen */
+
+.menu-container {
+    display: none;
+}
+
+/* smaller home page image for smaller screen */
+.meSmall {
+    display: none;
+}
+
+.artCells {
+    margin-top: 50px;
+}
+.row {
+    display: flex;      
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+}
+
+/* the Arts section */
+.artContainer{
+    margin-right: 100px;
+    width: calc(50% - 50px); 
+}
+
+.cellHeader {
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.cell {
+    margin-top: 0;
+    font-family: "linter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+
+/* the A little bit of Both section */
+.hashPoint {
+    font-size: 20px;
+    font-family: "architects daughter", sans-serif;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    line-height: 1;
+}
+
+
+li.hashPoint::before {
+    content: "#";
+}
+
+.skillsBox {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Helps spread the items evenly */
+}
+
+.skill {
+    flex-basis: calc(25% - 20px); /* Deducting the gap size */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+/* Adjusting for smaller screens */
+@media (max-width: 768px) {
+    .skill {
+        flex-basis: calc(50% - 20px); /* Two items per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        flex-basis: 100%; /* One item per row for very small screens */
+    }
+}
+
+/* resizing for different screen sizes */
+@media screen and (max-width: 1320px) {
+    /* body { background-color: #ee7e1b;  }  */
+    .meImg {
+        max-width: 33%;
+        min-width: 300px;
+        max-height: 500px;
+        height: auto;
+        margin-right: 3%;
+    }
+    .intro {
+        line-height: 5vw;
+    }
+    .overlay-text {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 1183px) {
+    .currentTimelineHeader {
+        font-size: 24px;
+    }
+    .timelineHeader {
+        font-size: 24px;
+    }
+}
+
+/* On screens that are 992px or less, apply a visible design/ layout change */
+@media screen and (max-width: 1012px) {
+  /* body { background-color: #9f0fac;  }  */
+  /* resizing the grey boxes */
+    .greyBox {
+        width: 12vw;
+        font-size: 2vw;
+        height: auto;
+    }
+    .overlay-text {
+        font-size: 30px;
+    }
+    /* abbreviated position titles */
+    #TA {
+        display: inline;
+    }
+    #TAFull {
+        display: none;
+    }
+    .SWE {
+        display: inline;
+    }
+    .SWEFull {
+        display: none;
+    }
+    #comp {
+        display: inline;
+    }
+    #compFull {
+        display: none;
+    }
+    /* change homepage image size */
+    .meImg {
+        max-width: 33%;
+        min-width: 250px;
+        max-height: 500px;
+        height: auto;
+    }
+
+    /* resize intro texts */
+    .intro {
+        font-size: 3vw;
+        line-height: 5vw;
+        margin-top: 5px;
+    }
+    .hello {
+        font-size: 3vw;
+    }
+    .outlined {
+        font-size: 6vw;
+    }
+    li::before {
+        content: "✨";        
+        margin-right: 5px; 
+        font-size: 36px;   
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .artContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  /* body { background-color: #31be96; }  */
+ 
+    .currentTimelineHeader {
+        font-size: 20px;
+    }
+    .overlay-text {
+        font-size: 20px;
+    }
+    .timelineHeader {
+        font-size: 20px;
+    }
+    .hello {
+        margin-left: 10px;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .center-container{
+        flex-direction: column;
+    }
+
+    .meImg {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .openingText {
+        width: 90%;
+        left: 5%;
+    }
+    .intro {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .outlined {
+        font-size: 48px;
+    }
+    
+    .greyBoxes1, .greyBoxes2 {
+        display: none;
+    }
+    .points, .artCells {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+  /* body { background-color: #ea0d0d; }  */
+  /* resize center container */
+    .center-container {
+        margin-top: 100px;
+    }
+    .headerContainer {
+        display: none;
+    }
+    /* intro */
+    .intro {
+        font-size: 7vw;
+        line-height: 50px;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+    /* abbreviated company and title names */
+    .companyName {
+        display: inline;
+    }
+    .fullCompanyName {
+        display: none;
+    }
+    #comp {
+        display: none;
+    }
+    #compSmall {
+        display: inline;
+    }
+
+    /* resize timeline section fonts and bullet points */
+    
+    .outlined {
+        font-size: 9vw;
+    }
+    .timelineHeader, .currentTimelineHeader {
+        font-size: 18px;
+    }
+
+    .star {
+        font-size: 18px;
+    }
+    .content {
+        margin-top: 60px;
+    }
+    .timeline {
+        margin-top: 20px;
+    }
+    .cellHeader {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    /* resize the Arts section */
+    .cell {
+        font-size: 16px;
+        margin-right: 7%;
+    }
+    .artContainer {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .sectionIntro {
+        font-size: 17px;
+        line-height: 24px;
+        padding: 0;
+        margin-right: 8%;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .sectionHeader {
+        font-size : 30px;
+        margin-bottom: 0px;
+    }
+    li.star::before {
+        content: "✨";
+        font-size: 16px;   
+
+    }
+    /* resize the a little bit of both section */
+    li.hashPoint {
+        font-size: 16px;
+    }
+    li.hashPoint::brefore {
+        font-size: 16px;
+    }
+    li.star {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .points {
+        margin-top: 5px;
+    }
+    .timelineSection {
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+    .timelineHeader {
+        margin: 0px;
+    }
+    .timelineContent {
+        margin: 0px;
+    }
+
+    /* show the menu drop down bar for small screen */
+    .menu-container {
+        position: relative;
+        width: 30px;
+        display:flex;
+        margin-left: 42%;
+        margin-right: 10%;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -150%;
+
+        z-index: 1;
+        font-family: "lintel", sans-serif;
+        
+    }
+    
+    .dropdown-content a {
+        padding: 5px 5px;
+        display: block;
+        background-color: #ffffff;
+        color: black;
+        text-decoration: none;
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        border:solid 2px rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center; 
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Architects Daughter', cursive;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ffc7c7;
+    }
+    
+    .menu-container:hover .dropdown-content {
+        display: block;
+    }
+
+    /* replace the large image with the smaller one */
+    .meImg {
+        display: none;
+    }
+
+    .meSmall {
+        display: block;
+        width: 80%;
+    }
+}
+#goUpButton {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    /* cursor: pointer; */
+    padding: 8px;
+    border-radius: 10px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:solid 2px rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+  }
+  
+  #goUpButton:hover {
+    background-color: #555;
+  }
